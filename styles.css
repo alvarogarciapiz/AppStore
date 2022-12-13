@@ -1,0 +1,105 @@
+header{
+    background-color: #2F2F2F;
+    padding: 20px;
+}
+
+.textoNav{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 30px;
+    display: inline-block;
+}
+
+.textoNavDerecha{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    display: inline-block;
+}
+
+.logo{
+    width: 20px;
+    height: 25px;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.country{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.enlaces{
+    display: inline-block;
+    width: 80%;
+}
+
+.enlaceDerecha{
+    display: inline-block;
+    margin-right: 5px;
+}
+.logoSpace{
+    display: inline-block;
+    width: 5%;
+    margin-left: 25px;
+}
+footer{
+    background-color: #E7E7E7;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.textoFooter{
+    color: #2F2F2F;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 5px;
+}
+
+.enlaceAzul{
+    color: #0A74F9;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.enlacesFooter{
+    margin-bottom: 20px;
+}
+
+.footerIzquierda{
+    display: inline-block;
+    width: 90%;
+}
+
+.footerDerecha{
+    width: 10%;
+    float: right;
+    margin-top: 50px;
+}
+
+aside{
+    display: inline-block;
+    background-color: #F2F2F2;
+    width: 20%;
+    margin:0px;
+    min-height: 80vh;
+}
+
+section {
+    display: inline-block;
+    width: 78%;
+    background-color: white;
+    margin: 0px;
+    min-height: 80vh;
+}
