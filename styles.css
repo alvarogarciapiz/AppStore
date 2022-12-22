@@ -37,6 +37,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: white;
+    display: 100%;
 }
 
 .enlaces {
@@ -95,7 +96,7 @@ footer {
 aside {
     display: inline-block;
     background-color: #F2F2F2;
-    width: 14%;
+    width: 15%;
     margin: 0px;
     min-height: 100vh;
     min-width: 200px;
@@ -103,8 +104,11 @@ aside {
 }
 
 section {
-    display: flexbox;
+    display: inline-block;
     background-color: white;
+    width: 82%;
+    vertical-align: top;
+    margin: 0px;
 }
 
 .buscadorInput {
@@ -181,4 +185,13 @@ section {
     margin: 10px;
     display: inline-block;
     vertical-align: middle;
+}
+
+.tituloNegroSection{
+    color: #2F2F2F;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 5px;
+    font-size: large;
+    font-weight: bolder;
 }

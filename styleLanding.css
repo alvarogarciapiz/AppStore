@@ -1,0 +1,50 @@
+.listadoApps {
+    margin-left: 40px;
+}
+
+.carrusel {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin: 50px;
+}
+
+.tarjeta {
+    display: inline-block;
+    width: 400px;
+    background-color: #f6f6f7;
+    border-radius: 20px;
+    margin-right: 20px;
+    padding: 15px;
+}
+
+.textoGrisInfo{
+    color: #b4b4b4;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.textoGrisImportante{
+    color: #b4b4b4;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.textoNegroTitulo{
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.textoTarjeta{
+    display: inline-block;
+    width: 220px;
+}
+
+.imagenTarjeta{
+    display: inline-block;
+    width: 95%;
+}
