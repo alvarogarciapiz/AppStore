@@ -2,15 +2,202 @@
 <html lang="es">
 
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
-    <meta name="description" content="Práctica final para la asignatura de desarrollo web I">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Álvaro García Pizarro">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styleFichaApp.css" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Práctica final para la asignatura de desarrollo web I" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Álvaro García Pizarro" />
 </head>
 
 <body>
+    <header>
+        <div class="logoSpace">
+            <a href="landingPage.html" class="textoNav"><img class="logo" src="assets/Apple_logo_white.svg.png" /></a>
+        </div>
+        <div class="enlaces">
+            <a href="catalogo.html" class="textoNav">Catálogo</a>
+            <a href="catalogo.html" class="textoNav">Juegos</a>
+            <a href="catalogo.html" class="textoNav">Actualizaciones</a>
+        </div>
+        <div class="enlaceDerecha">
+            <a href="registroLogin.html" class="textoNavDerecha">Login/Registro</a>
+        </div>
+    </header>
 
+
+    <aside>
+        <div class="buscador">
+            <input class="buscadorInput" type="text" placeholder="Buscar">
+        </div>
+
+        <div class="enlacesAside">
+            <div class="enlaceAside">
+                <a href="#" class="iconosAside"><img class="iconosAside" src="assets/home.png" /></a>
+                <a href="#" class="enlaceAzulAside">Tu perfil</a>
+            </div>
+            <div class="enlaceAside">
+                <a href="catalogo.html" class="iconosAside"><img class="iconosAside" src="assets/catalogo.png" /></a>
+                <a href="catalogo.html" class="enlaceAzulAside">Catálogo</a>
+            </div>
+            <div class="enlaceAside">
+                <a href="developer.html" class="iconosAside"><img class="iconosAside"
+                        src="assets/desarrolladores.png" /></a>
+                <a href="developer.html" class="enlaceAzulAside">Desarrollo</a>
+            </div>
+
+        </div>
+
+        <div class="perfil">
+            <div class="profile">
+                <a href="#" class="profile"><img class="profile" src="assets/profile.png" /></a>
+            </div>
+            <div class="textoProfile">
+                <a href="#" class="textoProfile">Tu perfil</a>
+            </div>
+        </div>
+    </aside>
+
+    <section class="aplicacion">
+        <div class="bioApp">
+            <div class="icono">
+                <img class="iconoImagen" src="assets/app1.png">
+            </div>
+            <div class="nombreApp">
+                <p class="textoNegroTitulo">Final Cut pro X</p>
+                <p class="textoGrisInfo"><br>Edición de video para profesionales</p>
+                <button class="botonPrecio"><a class="textoBlanco">23,99€</a></button>
+            </div>
+        </div>
+        <hr class="division" style="margin-bottom: 3px;">
+        <div class="infoApp">
+            <div class="elementoInfoApp">
+                <p class="textoGrisInfoApp">1 MIL VALORACIONES</p>
+                <p class="textoGrisImportanteApp">3</p>
+                <p class="textoGrisDescripcionApp">★★★☆☆</p>
+            </div>
+            <div class="elementoInfoApp">
+                <p class="textoGrisInfoApp">EDAD</p>
+                <p class="textoGrisImportanteApp">4 +</p>
+                <p class="textoGrisDescripcionApp">años</p>
+            </div>
+            <div class="elementoInfoApp">
+                <p class="textoGrisInfoApp">CLASIFICACIÓN</p>
+                <p class="textoGrisImportanteApp">Nº 1</p>
+                <p class="textoGrisDescripcionApp">Para editores</p>
+            </div>
+            <div class="elementoInfoApp">
+                <p class="textoGrisInfoApp">Desarrollador</p>
+                <p class="textoGrisImportanteApp">AP</p>
+                <p class="textoGrisDescripcionApp">Apple</p>
+            </div>
+            <div class="elementoInfoApp">
+                <p class="textoGrisInfoApp">IDIOMA</p>
+                <p class="textoGrisImportanteApp">EN</p>
+                <p class="textoGrisDescripcionApp">Inglés</p>
+            </div>
+            <div class="elementoInfoApp" style="border-right: none;">
+                <p class="textoGrisInfoApp">TAMAÑO</p>
+                <p class="textoGrisImportanteApp">7,7</p>
+                <p class="textoGrisDescripcionApp">GB</p>
+            </div>
+        </div>
+        <hr class="division">
+        <div class="novedades">
+            <div class="zonaIzquierda">
+                <p class="textoNegro">Novedades</p>
+                <p class="textoNegroDescripcion">Esta actualización trae nuevos efectos de video y transiones de cine.</p>
+                <br>
+            </div>
+            <div class="zonaDerecha">
+                <p class="textoAzul">Versiones previas</p>
+                <br>
+                <p class="textoGrisInfo">Hace 1 mes</p>
+            </div>
+        </div>
+        <hr class="division">
+
+        <div class="zonaImagenes">
+            <p class="textoNegro">Previsualización</p>
+            <div class="imagenes">
+            <img class="capturaPantalla" src="assets/finalCut1.jpeg">
+            <img class="capturaPantalla" src="assets/finalCut2.jpg">
+            </div>
+        </div>
+
+        <div class="historial">
+            <p class="textoNegroTitulo">Historial de versiones</p>
+            <hr class="division">
+            <div class="novedades">
+                <div class="zonaIzquierda">
+                    <p class="textoNegro">14.1</p>
+                    <p class="textoNegroDescripcion">Esta actualización trae nuevos efectos de video y transiones de cine.</p>
+                </div>
+                <div class="zonaDerecha">
+                    <p class="textoGrisInfo">Hace 1 mes</p>
+                </div>
+                <hr class="division">
+            </div>
+            <div class="novedades">
+                <div class="zonaIzquierda">
+                    <p class="textoNegro">14.0</p>
+                    <p class="textoNegroDescripcion">Solución de errores</p>
+                </div>
+                <div class="zonaDerecha">
+                    <p class="textoGrisInfo">Hace 1 mes</p>
+                </div>
+                <hr class="division">
+            </div>
+            <div class="novedades">
+                <div class="zonaIzquierda">
+                    <p class="textoNegro">13.9</p>
+                    <p class="textoNegroDescripcion">Actualziación para corregir ciertos errores a la hora de aplicar un filtro</p>
+                </div>
+                <div class="zonaDerecha">
+                    <p class="textoGrisInfo">Hace 1 mes</p>
+                </div>
+                <hr class="division">
+            </div>
+            <div class="novedades">
+                <div class="zonaIzquierda">
+                    <p class="textoNegro">13.8</p>
+                    <p class="textoNegroDescripcion">Esta actualización trae nuevos efectos de video y transiones de cine. Descúbrelas desde el nuevo editor de video</p>
+                </div>
+                <div class="zonaDerecha">
+                    <p class="textoGrisInfo">Hace 1 mes</p>
+                </div>
+                <hr class="division">
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footerIzquierda">
+            <div class="infoFooter">
+                <p class="textoFooter">Más formas de comprar: encuentra un <span class="enlaceAzul">Apple Store</span> o
+                    un <span class="enlaceAzul">distribuidor</span> cerca de ti. O llama al 000 000
+                    000.</p>
+                <p class="textoFooter">Copyright © 2022 Apple Inc. Todos los derechos reservados.</p>
+            </div>
+            <div class="enlacesFooter">
+                <a href="#" class="textoFooter">Política de privacidad </a> <a> | </a>
+                <a href="#" class="textoFooter">Uso de Cookies </a> <a> | </a>
+                <a href="#" class="textoFooter">Condiciones de servicio </a> <a> | </a>
+                <a href="#" class="textoFooter">Ventas y reembolsos </a> <a> | </a>
+                <a href="#" class="textoFooter">Avisos legales </a> <a> | </a>
+                <a href="#" class="textoFooter">Mapa del sitio </a>
+            </div>
+        </div>
+        <div class="footerDerecha">
+            <div class="country">
+                <a href="landingPage.html" class="textoNav"><img class="country" src="assets/spain.png" /></a>
+            </div>
+            <div class="enlaces">
+                <a href="#" class="textoFooter">España</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,188 @@
+.textoNegroTitulo{
+    color: rgb(32, 32, 32);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    white-space: pre-line;
+    margin: 0;
+    font-weight: bolder;
+}
+
+.textoNegro{
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    white-space: pre-line;
+    margin: 0;
+}
+
+.textoNegroDescripcion{
+    color: rgb(74, 74, 74);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.textoBlanco{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.textoAzul{
+    color: #0A74F9;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    white-space: pre-line;
+    margin: 0;
+}
+
+.textoGrisInfo{
+    color: #b4b4b4;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    white-space: pre-line;
+    margin: 0;
+}
+
+.textoGrisInfoApp{
+    color: #b4b4b4;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    white-space: pre-line;
+    margin: 0;
+}
+
+.textoGrisImportanteApp{
+    color: #787878;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    white-space: pre-line;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.textoGrisDescripcionApp{
+    color: #787878;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    white-space: pre-line;
+    font-weight: 800;
+}
+
+.textoGrisImportante{
+    color: #a8a8a8;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    white-space: pre-line;
+    margin: 0;
+    font-weight: bolder;
+}
+
+.division{
+    width: 100%;
+    height: 1px;
+    background-color: #d5d5d5;
+    border: none;
+    margin-bottom: 50px;
+}
+
+.bioApp{
+    width: 100%;
+    display: inline-block;
+}
+
+.icono{
+    width: 10%;
+    display: inline-block;
+}
+
+.iconoImagen{
+    width: 100%;
+    height: 100%;
+}
+
+.nombreApp{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.aplicacion{
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.botonPrecio{
+    background-color: #0A74F9;
+    border-radius: 20px;
+    border: none;
+    width: 80px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+.capturaPantalla{
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+    margin-right: 30px;
+    border-radius: 7px;
+}
+
+.imagenes{
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.zonaImagenes{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.zonaDerecha{
+    display: inline-block;
+    width: 15%;
+    text-align: right;
+    vertical-align: top;
+}
+
+.zonaIzquierda{
+    display: inline-block;
+    width: 67%;
+}
+
+.novedades{
+    display: inline-block;
+    width: 100%;
+}
+
+.infoApp{
+    display: inline-block;
+    padding: 10px;
+    height: 90px;
+}
+
+.elementoInfoApp{
+    display: inline-block;
+    height: 100%;
+    width: 150px;
+    margin-left:20px;
+    text-align: center;
+    border-right: solid;
+    border-color: #cecece;
+    border-width: 1px;
+    padding-right: 20px;
+}
