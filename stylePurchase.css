@@ -1,0 +1,64 @@
+.purchase{
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.botonPagar{
+    background-color: #0A74F9;
+    border-radius: 14px;
+    border: none;
+    width: 80px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+.textoBlanco{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.textoGrisInfo{
+    color: #b4b4b4;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    white-space: pre-line;
+    margin: 0;
+}
+
+.textoGrisTitulo{
+    color: #b4b4b4;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    white-space: pre-line;
+    margin: 0;
+}
+
+.espacioCampos{
+    width: 60%;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.espacioPago{
+    width: 60%;
+}
+
+.input{
+    width: 300px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: solid;
+    border-width: 2px;
+    border-color: #b4b4b4;
+    padding-left: 10px;
+    color: #b4b4b4;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}

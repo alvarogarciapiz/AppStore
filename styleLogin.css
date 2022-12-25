@@ -1,0 +1,90 @@
+.loginRegistro{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.botonLogin{
+    background-color: #0A74F9;
+    border-radius: 14px;
+    border: none;
+    width: 100px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+.textoBlanco{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.textoGrisInfo{
+    color: #b4b4b4;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    white-space: pre-line;
+    margin-top: 10px;
+}
+
+.textoGrisTitulo{
+    color: #b4b4b4;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    white-space: pre-line;
+    margin: 0;
+}
+
+.textoNegroTitulo{
+    color: #383838;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    white-space: pre-line;
+    margin: 0;
+}
+
+.espacioLogin{
+    width: 30%;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.espacioRegistro{
+    width: 30%;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+.espacioBoton{
+    display: inline-block;
+    width: 10%;
+}
+
+.input{
+    width: 300px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: solid;
+    border-width: 2px;
+    border-color: #b4b4b4;
+    padding-left: 10px;
+    color: #b4b4b4;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.division{
+    width: 100%;
+    height: 1px;
+    background-color: #d5d5d5;
+    border: none;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}

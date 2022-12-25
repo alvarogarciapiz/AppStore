@@ -2,15 +2,109 @@
 <html lang="es">
 
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
-    <meta name="description" content="Práctica final para la asignatura de desarrollo web I">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Álvaro García Pizarro">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styleLogin.css" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Práctica final para la asignatura de desarrollo web I" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Álvaro García Pizarro" />
 </head>
 
 <body>
+    <header>
+        <div class="logoSpace">
+            <a href="landingPage.html" class="textoNav"><img class="logo" src="assets/Apple_logo_white.svg.png" /></a>
+        </div>
+        <div class="enlaces">
+            <a href="catalogo.html" class="textoNav">Catálogo</a>
+            <a href="catalogo.html" class="textoNav">Juegos</a>
+            <a href="catalogo.html" class="textoNav">Actualizaciones</a>
+        </div>
+        <div class="enlaceDerecha">
+            <a href="registroLogin.html" class="textoNavDerecha">Login/Registro</a>
+        </div>
+    </header>
 
+
+    <aside>
+        <div class="buscador">
+            <input class="buscadorInput" type="text" placeholder="Buscar">
+        </div>
+
+        <div class="enlacesAside">
+            <div class="enlaceAside">
+                <a href="#" class="iconosAside"><img class="iconosAside" src="assets/home.png" /></a>
+                <a href="#" class="enlaceAzulAside">Tu perfil</a>
+            </div>
+            <div class="enlaceAside">
+                <a href="catalogo.html" class="iconosAside"><img class="iconosAside" src="assets/catalogo.png" /></a>
+                <a href="catalogo.html" class="enlaceAzulAside">Catálogo</a>
+            </div>
+            <div class="enlaceAside">
+                <a href="developer.html" class="iconosAside"><img class="iconosAside"
+                        src="assets/desarrolladores.png" /></a>
+                <a href="developer.html" class="enlaceAzulAside">Desarrollo</a>
+            </div>
+
+        </div>
+
+        <div class="perfil">
+            <div class="profile">
+                <a href="#" class="profile"><img class="profile" src="assets/profile.png" /></a>
+            </div>
+            <div class="textoProfile">
+                <a href="#" class="textoProfile">Tu perfil</a>
+            </div>
+        </div>
+    </aside>
+
+    <section class="loginRegistro">
+        <div class="espacioLogin">
+            <p class="textoNegroTitulo">Login</p>
+            <p class="textoGrisInfo">Introduzca sus datos para acceder a la aplicación</p><br>
+            <input placeholder="Email" class="input" type="email"><br>
+            <input placeholder="Contraseña" class="input" type="password"><br>
+        </div>
+        <div class="espacioBoton"><button class="botonLogin"><a class="textoBlanco">Login</a></button></div>
+        <hr class="division">
+        <div class="espacioRegistro">
+            <p class="textoNegroTitulo">Registro</p>
+            <p class="textoGrisInfo">Introduzca sus datos para acceder a la aplicación</p><br>
+            <input placeholder="Nombre" class="input"><br>
+            <input placeholder="Apellidos" class="input"><br>
+            <input placeholder="Email" class="input" type="email"><br>
+            <input placeholder="Contraseña" class="input" type="password"><br>
+            <input placeholder="Repita la contraseña" class="input" type="password"><br>
+        </div>
+        <div class="espacioBoton"><button class="botonLogin"><a class="textoBlanco">Registro</a></button></div>
+    </section>
+
+    <footer>
+        <div class="footerIzquierda">
+            <div class="infoFooter">
+                <p class="textoFooter">Más formas de comprar: encuentra un <span class="enlaceAzul">Apple Store</span> o
+                    un <span class="enlaceAzul">distribuidor</span> cerca de ti. O llama al 000 000
+                    000.</p>
+                <p class="textoFooter">Copyright © 2022 Apple Inc. Todos los derechos reservados.</p>
+            </div>
+            <div class="enlacesFooter">
+                <a href="#" class="textoFooter">Política de privacidad </a> <a> | </a>
+                <a href="#" class="textoFooter">Uso de Cookies </a> <a> | </a>
+                <a href="#" class="textoFooter">Condiciones de servicio </a> <a> | </a>
+                <a href="#" class="textoFooter">Ventas y reembolsos </a> <a> | </a>
+                <a href="#" class="textoFooter">Avisos legales </a> <a> | </a>
+                <a href="#" class="textoFooter">Mapa del sitio </a>
+            </div>
+        </div>
+        <div class="footerDerecha">
+            <div class="country">
+                <a href="landingPage.html" class="textoNav"><img class="country" src="assets/spain.png" /></a>
+            </div>
+            <div class="enlaces">
+                <a href="#" class="textoFooter">España</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
