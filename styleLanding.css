@@ -45,6 +45,15 @@
     margin-top: 10px;
 }
 
+.textoGrisTitulo{
+    color: #b4b4b4;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    white-space: pre-line;
+    margin: 0;
+}
+
 .textoNegroTitulo{
     color: black;
     text-decoration: none;
@@ -141,4 +150,31 @@
 .iconoApp{
     width: 100%;
     height: 100%;
+    border-radius: 14px;
+}
+
+.spaceApps {
+    margin-left: 40px;
+    margin-top: 40px;
+    width: 90%;
+}
+
+.textoAzul{
+    color: #5a9ae8;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    white-space: pre-line;
+    margin: 0;
+}
+
+.botonOpciones{
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #5a9ae8;
+    width: 45%;
+    background-color: white;
+    height: 90px;
+    margin-right: 40px;
+    margin-bottom: 40px;
 }
