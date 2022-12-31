@@ -8,6 +8,8 @@
     <meta name="description" content="Práctica final para la asignatura de desarrollo web I" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta name="author" content="Álvaro García Pizarro" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+		integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -28,7 +30,7 @@
 
     <aside>
         <div class="buscador">
-            <input class="buscadorInput" type="text" placeholder="Buscar">
+            <input class="buscadorInput" id="buscadorInput" type="text" placeholder="Buscar">
         </div>
 
         <div class="enlacesAside">
@@ -213,6 +215,16 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        $('document').ready(function(){
+            $('#buscadorInput').keypress(function (e) {
+                if (e.which == 13) {//Enter key pressed
+                    window.location.replace("searchForm.html"); 
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

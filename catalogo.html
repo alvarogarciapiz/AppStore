@@ -8,6 +8,8 @@
     <meta name="description" content="Práctica final para la asignatura de desarrollo web I" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta name="author" content="Álvaro García Pizarro" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+		integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -28,7 +30,7 @@
 
     <aside>
         <div class="buscador">
-            <input class="buscadorInput" type="text" placeholder="Buscar">
+            <input class="buscadorInput" id="buscadorInput" type="text" placeholder="Buscar">
         </div>
 
         <div class="enlacesAside">
@@ -59,134 +61,156 @@
     </aside>
 
     <section>
-            <div class="listadoApps">
-                <br>
-                <p class="tituloNegroSection">Apps y juegos que nos encantan</p>
-                <div class="containerApps">
-                    <div class="app">
-                        <div class="iconoAppContainer"><a href="fichaApp.html"><img src="assets/app1.png" class="iconoApp"></a></div>
-                        <div class="infoAppContainer">
-                            <p class="textoNegroTitulo">Final Cut Pro X</p>
-                            <p class="textoGrisImportanteApp">Edición de video profesional</p>
-                        </div>
-                        <div class="botonAppContainer textoDescargar"><a href="fichaApp.html" class="url">Descargar</a></div>
-                        <hr class="divisionApps">
+        <div class="listadoApps">
+            <br>
+            <p class="tituloNegroSection">Apps y juegos que nos encantan</p>
+            <div class="containerApps">
+                <div class="app">
+                    <div class="iconoAppContainer"><a href="fichaApp.html"><img src="assets/app1.png"
+                                class="iconoApp"></a></div>
+                    <div class="infoAppContainer">
+                        <p class="textoNegroTitulo">Final Cut Pro X</p>
+                        <p class="textoGrisImportanteApp">Edición de video profesional</p>
                     </div>
-                    <div class="app">
-                        <div class="iconoAppContainer"><a href="fichaApp.html"><img src="assets/app2.png" class="iconoApp"></a></div>
-                        <div class="infoAppContainer">
-                            <p class="textoNegroTitulo">Kaleidoscope 3</p>
-                            <p class="textoGrisImportanteApp">Para desarrolladores </p>
-                        </div>
-                        <div class="botonAppContainer textoDescargar"><a href="fichaApp.html" class="url">Descargar</a></div>
-                        <hr class="divisionApps">
+                    <div class="botonAppContainer textoDescargar"><a href="fichaApp.html" class="url">Descargar</a>
                     </div>
-                    <div class="app">
-                        <div class="iconoAppContainer"><a href="fichaApp.html"><img src="assets/app3.png" class="iconoApp"></a></div>
-                        <div class="infoAppContainer">
-                            <p class="textoNegroTitulo">Calendario escolar</p>
-                            <p class="textoGrisImportanteApp">Organiza tus tareas </p>
-                        </div>
-                        <div class="botonAppContainer textoDescargar"><a href="fichaApp.html" class="url">Descargar</a></div>
-                        <hr class="divisionApps">
-                    </div>
-                    <div class="app">
-                        <div class="iconoAppContainer"><a href="fichaApp.html"><img src="assets/app4.png" class="iconoApp"></a></div>
-                        <div class="infoAppContainer">
-                            <p class="textoNegroTitulo">Zomato</p>
-                            <p class="textoGrisImportanteApp">Juego de cocina </p>
-                        </div>
-                        <div class="botonAppContainer textoDescargar"><a href="fichaApp.html" class="url">Descargar</a></div>
-                        <hr class="divisionApps">
-                    </div>
-                    
+                    <hr class="divisionApps">
                 </div>
-                <br>
-                <p class="tituloNegroSection">Top Juegos Gratis</p>
-                <div class="containerApps">
-                    <div class="app">
-                        <div class="iconoAppContainer"><a href="fichaApp.html"><img src="assets/game1.jpg" class="iconoApp"></a></div>
-                        <div class="infoAppContainer">
-                            <p class="textoNegroTitulo">Candy Crush Saga</p>
-                            <p class="textoGrisImportanteApp">Conecta caramelos iguales</p>
-                        </div>
-                        <div class="botonAppContainer textoDescargar"><a href="fichaApp.html" class="url">Descargar</a></div>
-                        <hr class="divisionApps">
+                <div class="app">
+                    <div class="iconoAppContainer"><a href="fichaApp.html"><img src="assets/app2.png"
+                                class="iconoApp"></a></div>
+                    <div class="infoAppContainer">
+                        <p class="textoNegroTitulo">Kaleidoscope 3</p>
+                        <p class="textoGrisImportanteApp">Para desarrolladores </p>
                     </div>
-                    <div class="app">
-                        <div class="iconoAppContainer"><a href="fichaApp.html"><img src="assets/game2.png" class="iconoApp"></a></div>
-                        <div class="infoAppContainer">
-                            <p class="textoNegroTitulo">Clash of Clans</p>
-                            <p class="textoGrisImportanteApp">Nuevo juego de Supercell</p>
-                        </div>
-                        <div class="botonAppContainer textoDescargar"><a href="fichaApp.html" class="url">Descargar</a></div>
-                        <hr class="divisionApps">
+                    <div class="botonAppContainer textoDescargar"><a href="fichaApp.html" class="url">Descargar</a>
                     </div>
-                    <div class="app">
-                        <div class="iconoAppContainer"><a href="fichaApp.html"><img src="assets/game3.png" class="iconoApp"></a></div>
-                        <div class="infoAppContainer">
-                            <p class="textoNegroTitulo">Brawl Stars</p>
-                            <p class="textoGrisImportanteApp">Un clásico que cunple 10 años </p>
-                        </div>
-                        <div class="botonAppContainer textoDescargar"><a href="fichaApp.html" class="url">Descargar</a></div>
-                        <hr class="divisionApps">
-                    </div>
-                    
-                    <div class="app">
-                        <div class="iconoAppContainer"><a href="fichaApp.html"><img src="assets/game4.jpg" class="iconoApp"></a></div>
-                        <div class="infoAppContainer">
-                            <p class="textoNegroTitulo">Call of Duty</p>
-                            <p class="textoGrisImportanteApp">Reta a tus amigos </p>
-                        </div>
-                        <div class="botonAppContainer textoDescargar"><a href="fichaApp.html" class="url">Descargar</a></div>
-                        <hr class="divisionApps">
-                    </div>
-                    
+                    <hr class="divisionApps">
                 </div>
-                <br>
-                <p class="tituloNegroSection">Productividad</p>
-                <div class="containerApps">
-                    <div class="app">
-                        <div class="iconoAppContainer"><a href="fichaApp.html"><img src="assets/app1.png" class="iconoApp"></a></div>
-                        <div class="infoAppContainer">
-                            <p class="textoNegroTitulo">Final Cut Pro X</p>
-                            <p class="textoGrisImportanteApp">Edición de video profesional</p>
-                        </div>
-                        <div class="botonAppContainer textoDescargar"><a href="fichaApp.html" class="url">Descargar</a></div>
-                        <hr class="divisionApps">
+                <div class="app">
+                    <div class="iconoAppContainer"><a href="fichaApp.html"><img src="assets/app3.png"
+                                class="iconoApp"></a></div>
+                    <div class="infoAppContainer">
+                        <p class="textoNegroTitulo">Calendario escolar</p>
+                        <p class="textoGrisImportanteApp">Organiza tus tareas </p>
                     </div>
-                    <div class="app">
-                        <div class="iconoAppContainer"><a href="fichaApp.html"><img src="assets/app2.png" class="iconoApp"></a></div>
-                        <div class="infoAppContainer">
-                            <p class="textoNegroTitulo">Kaleidoscope 3</p>
-                            <p class="textoGrisImportanteApp">Para desarrolladores </p>
-                        </div>
-                        <div class="botonAppContainer textoDescargar"><a href="fichaApp.html" class="url">Descargar</a></div>
-                        <hr class="divisionApps">
+                    <div class="botonAppContainer textoDescargar"><a href="fichaApp.html" class="url">Descargar</a>
                     </div>
-                    <div class="app">
-                        <div class="iconoAppContainer"><a href="fichaApp.html"><img src="assets/app3.png" class="iconoApp"></a></div>
-                        <div class="infoAppContainer">
-                            <p class="textoNegroTitulo">Calendario escolar</p>
-                            <p class="textoGrisImportanteApp">Organiza tus tareas </p>
-                        </div>
-                        <div class="botonAppContainer textoDescargar"><a href="fichaApp.html" class="url">Descargar</a></div>
-                        <hr class="divisionApps">
-                    </div>
-                    
-                    <div class="app">
-                        <div class="iconoAppContainer"><a href="fichaApp.html"><img src="assets/app5.png" class="iconoApp"></a></div>
-                        <div class="infoAppContainer">
-                            <p class="textoNegroTitulo">Notion</p>
-                            <p class="textoGrisImportanteApp">Organiza tu vida </p>
-                        </div>
-                        <div class="botonAppContainer textoDescargar"><a href="fichaApp.html" class="url">Descargar</a></div>
-                        <hr class="divisionApps">
-                    </div>
-                    
+                    <hr class="divisionApps">
                 </div>
+                <div class="app">
+                    <div class="iconoAppContainer"><a href="fichaApp.html"><img src="assets/app4.png"
+                                class="iconoApp"></a></div>
+                    <div class="infoAppContainer">
+                        <p class="textoNegroTitulo">Zomato</p>
+                        <p class="textoGrisImportanteApp">Juego de cocina </p>
+                    </div>
+                    <div class="botonAppContainer textoDescargar"><a href="fichaApp.html" class="url">Descargar</a>
+                    </div>
+                    <hr class="divisionApps">
+                </div>
+
             </div>
-   
+            <br>
+            <p class="tituloNegroSection">Top Juegos Gratis</p>
+            <div class="containerApps">
+                <div class="app">
+                    <div class="iconoAppContainer"><a href="fichaApp.html"><img src="assets/game1.jpg"
+                                class="iconoApp"></a></div>
+                    <div class="infoAppContainer">
+                        <p class="textoNegroTitulo">Candy Crush Saga</p>
+                        <p class="textoGrisImportanteApp">Conecta caramelos iguales</p>
+                    </div>
+                    <div class="botonAppContainer textoDescargar"><a href="fichaApp.html" class="url">Descargar</a>
+                    </div>
+                    <hr class="divisionApps">
+                </div>
+                <div class="app">
+                    <div class="iconoAppContainer"><a href="fichaApp.html"><img src="assets/game2.png"
+                                class="iconoApp"></a></div>
+                    <div class="infoAppContainer">
+                        <p class="textoNegroTitulo">Clash of Clans</p>
+                        <p class="textoGrisImportanteApp">Nuevo juego de Supercell</p>
+                    </div>
+                    <div class="botonAppContainer textoDescargar"><a href="fichaApp.html" class="url">Descargar</a>
+                    </div>
+                    <hr class="divisionApps">
+                </div>
+                <div class="app">
+                    <div class="iconoAppContainer"><a href="fichaApp.html"><img src="assets/game3.png"
+                                class="iconoApp"></a></div>
+                    <div class="infoAppContainer">
+                        <p class="textoNegroTitulo">Brawl Stars</p>
+                        <p class="textoGrisImportanteApp">Un clásico que cunple 10 años </p>
+                    </div>
+                    <div class="botonAppContainer textoDescargar"><a href="fichaApp.html" class="url">Descargar</a>
+                    </div>
+                    <hr class="divisionApps">
+                </div>
+
+                <div class="app">
+                    <div class="iconoAppContainer"><a href="fichaApp.html"><img src="assets/game4.jpg"
+                                class="iconoApp"></a></div>
+                    <div class="infoAppContainer">
+                        <p class="textoNegroTitulo">Call of Duty</p>
+                        <p class="textoGrisImportanteApp">Reta a tus amigos </p>
+                    </div>
+                    <div class="botonAppContainer textoDescargar"><a href="fichaApp.html" class="url">Descargar</a>
+                    </div>
+                    <hr class="divisionApps">
+                </div>
+
+            </div>
+            <br>
+            <p class="tituloNegroSection">Productividad</p>
+            <div class="containerApps">
+                <div class="app">
+                    <div class="iconoAppContainer"><a href="fichaApp.html"><img src="assets/app1.png"
+                                class="iconoApp"></a></div>
+                    <div class="infoAppContainer">
+                        <p class="textoNegroTitulo">Final Cut Pro X</p>
+                        <p class="textoGrisImportanteApp">Edición de video profesional</p>
+                    </div>
+                    <div class="botonAppContainer textoDescargar"><a href="fichaApp.html" class="url">Descargar</a>
+                    </div>
+                    <hr class="divisionApps">
+                </div>
+                <div class="app">
+                    <div class="iconoAppContainer"><a href="fichaApp.html"><img src="assets/app2.png"
+                                class="iconoApp"></a></div>
+                    <div class="infoAppContainer">
+                        <p class="textoNegroTitulo">Kaleidoscope 3</p>
+                        <p class="textoGrisImportanteApp">Para desarrolladores </p>
+                    </div>
+                    <div class="botonAppContainer textoDescargar"><a href="fichaApp.html" class="url">Descargar</a>
+                    </div>
+                    <hr class="divisionApps">
+                </div>
+                <div class="app">
+                    <div class="iconoAppContainer"><a href="fichaApp.html"><img src="assets/app3.png"
+                                class="iconoApp"></a></div>
+                    <div class="infoAppContainer">
+                        <p class="textoNegroTitulo">Calendario escolar</p>
+                        <p class="textoGrisImportanteApp">Organiza tus tareas </p>
+                    </div>
+                    <div class="botonAppContainer textoDescargar"><a href="fichaApp.html" class="url">Descargar</a>
+                    </div>
+                </div>
+
+                <div class="app">
+                    <div class="iconoAppContainer"><a href="fichaApp.html"><img src="assets/app5.png"
+                                class="iconoApp"></a></div>
+                    <div class="infoAppContainer">
+                        <p class="textoNegroTitulo">Notion</p>
+                        <p class="textoGrisImportanteApp">Organiza tu vida </p>
+                    </div>
+                    <div class="botonAppContainer textoDescargar"><a href="fichaApp.html" class="url">Descargar</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </section>
 
     <footer>
@@ -215,6 +239,15 @@
             </div>
         </div>
     </footer>
+    <script>
+        $('document').ready(function () {
+            $('#buscadorInput').keypress(function (e) {
+                if (e.which == 13) {//Enter key pressed
+                    window.location.replace("searchForm.html");
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

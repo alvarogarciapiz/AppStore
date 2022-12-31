@@ -96,7 +96,7 @@ footer {
 aside {
     display: inline-block;
     background-color: #F2F2F2;
-    width: 15%;
+    width: 14%;
     margin: 0px;
     min-width: 200px;
     position: relative;
@@ -106,7 +106,7 @@ aside {
 section {
     display: inline-block;
     background-color: white;
-    width: 82%;
+    width: 78%;
     vertical-align: top;
     margin: 0px;
 }

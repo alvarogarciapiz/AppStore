@@ -8,6 +8,25 @@
     <meta name="description" content="Práctica final para la asignatura de desarrollo web I" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta name="author" content="Álvaro García Pizarro" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <style>
+        .textoVerde {
+            color: rgb(20, 133, 29);
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            margin-left: 20px;
+        }
+
+        .textoRojo {
+            color: rgb(203, 52, 52);
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            margin-left: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -28,7 +47,7 @@
 
     <aside>
         <div class="buscador">
-            <input class="buscadorInput" type="text" placeholder="Buscar">
+            <input class="buscadorInput" id="buscadorInput" type="text" placeholder="Buscar">
         </div>
 
         <div class="enlacesAside">
@@ -61,22 +80,33 @@
     <section class="loginRegistro">
         <div class="espacioLogin">
             <p class="textoNegroTitulo">Login</p>
-            <p class="textoGrisInfo">Introduzca sus datos para acceder a la aplicación</p><br>
-            <input placeholder="Email" class="input" type="email"><br>
-            <input placeholder="Contraseña" class="input" type="password"><br>
+            <p class="textoGrisInfo">Introduzca sus datos para acceder a la aplicación</p>
+            <p><span id="help_login" style="margin-left: 0px;"></span></p>
+            <input placeholder="Email" class="input" type="email" id="email_login"><span class="textoRojo"
+                id="email_login_help"></span><br>
+            <input placeholder="Contraseña" class="input" type="password" id="password_login"><span class="textoRojo"
+                id="password_login_help"></span><br>
+            <button class="botonLogin" id="login"><a class="textoBlanco">Login</a></button>
         </div>
-        <div class="espacioBoton"><button class="botonLogin"><a class="textoBlanco">Login</a></button></div>
+
         <hr class="division">
         <div class="espacioRegistro">
             <p class="textoNegroTitulo">Registro</p>
-            <p class="textoGrisInfo">Introduzca sus datos para acceder a la aplicación</p><br>
-            <input placeholder="Nombre" class="input"><br>
-            <input placeholder="Apellidos" class="input"><br>
-            <input placeholder="Email" class="input" type="email"><br>
-            <input placeholder="Contraseña" class="input" type="password"><br>
-            <input placeholder="Repita la contraseña" class="input" type="password"><br>
+            <p class="textoGrisInfo">Introduzca sus datos para acceder a la aplicación</p>
+            <p><span id="registro_help" style="margin-left: 0px;"></span></p>
+
+            <input placeholder="Nombre" class="input" id="nombre"><span class="textoRojo" id="nombre_help"></span><br>
+            <input placeholder="Apellidos" class="input" id="apellidos"><span class="textoRojo"
+                id="apellidos_help"></span><br>
+            <input placeholder="Email" class="input" type="email" id="email_registro"><span class="textoRojo"
+                id="email_registro_help"></span><br>
+            <input placeholder="Contraseña" class="input" type="password" id="password_registro"><span class="textoRojo"
+                id="password_registro_help"></span><br>
+            <input placeholder="Repita la contraseña" class="input" type="password" id="password_registro_bis"><span
+                class="textoRojo" id="password_registro_bis_help"></span><br>
+
+            <button class="botonLogin" id="registro"><a class="textoBlanco">Registro</a></button>
         </div>
-        <div class="espacioBoton"><button class="botonLogin"><a class="textoBlanco">Registro</a></button></div>
     </section>
 
     <footer>
@@ -105,6 +135,108 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        $(document).ready(function () {
+            var errorLogin = false;
+            var errorRegistro = false;
+            var regExpEmail = /^([a-zA-Z0-9\+\-\.]+)@(([a-zA-Z0-9]+\.)+)[a-zA-Z]+$/;
+            var regExpPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+
+            //Validación de los campos LOGIN
+            $('#login').click(function () {
+
+                //Validación del email
+                if (!regExpEmail.test($('#email_login').val())) {
+                    errorLogin = true;
+                    $('#email_login_help').html('Introduzca un email válido');
+                }
+
+                //Comprobación contraseña
+                if ($('#password_login').val() == '') {
+                    errorLogin = true;
+                    $('#password_login_help').html('Introduzca su contraseña');
+                }
+
+                //Comprobación de ERROR
+                if (errorLogin == true) {
+                    $('#help_login').addClass('textoRojo');
+                    $('#help_login').html('Corrija los errores');
+                } else {
+                    $('#help_login').addClass('textoVerde');
+                    $('#help_login').html('Login con éxito');
+                    //Envío de los datos
+                }
+            });
+
+            //Validación de los campos REGISTRO
+            $('#registro').click(function () {
+
+                //Validación del Nombre
+                if ($('#nombre').val() == "") {
+                    $('#nombre_help').html('Introduzca su nombre');
+                    errorRegistro = true;
+                }
+                if ($('#nombre').val().length > 20) {
+                    $('#nombre_help').html('Introduce un nombre válido');
+                    errorRegistro = true;
+                }
+
+                //Validación de los apellidos
+                if ($('#apellidos').val() == "") {
+                    $('#apellidos_help').html('Introduzca sus apellidos');
+                    errorRegistro = true;
+                }
+                if ($('#apellidos').val().length >= 40) {
+                    $('#apellidos_help').html('Introduzca unos apellidos válidos');
+                    errorRegistro = true;
+                }
+
+                //Validación del email
+                if (!regExpEmail.test($('#email_registro').val())) {
+                    errorRegistro = true;
+                    $('#email_registro_help').html('Introduzca un email válido');
+                }
+
+                //Validación contraseña
+                if ($('#password_registro').val() == '') {
+                    errorRegistro = true;
+                    $('#password_registro_help').html('No puede dejar este campo vacío');
+                }
+                if ($('#password_registro_bis').val() == '') {
+                    errorRegistro = true;
+                    $('#password_registro_bis_help').html('No puede dejar este campo vacío');
+                }
+
+                if (!regExpPassword.test($('#password_registro').val())) {
+                    errorRegistro = true;
+                    $('#password_registro_help').html('Su contraseña debe contener al menos 8 caracteres, una mayúscula, una minúscula y un número');
+                }
+
+                var iguales = $('#password_registro').val() == $('#password_registro_bis').val();
+                if (!iguales) {
+                    errorRegistro = true;
+                    $('#password_registro_bis_help').html('Las contraseñas deben coincidir');
+                }
+
+                //Comprobación de ERROR
+                if (errorRegistro == true) {
+                    $('#registro_help').addClass('textoRojo');
+                    $('#registro_help').html('Corrija los errores');
+                } else {
+                    $('#registro_help').addClass('textoVerde');
+                    $('#registro_help').html('Has sido registrado con éxito');
+                    //Envío de los datos
+                }
+            });
+
+            $('#buscadorInput').keypress(function (e) {
+                if (e.which == 13) {//Enter key pressed
+                    window.location.replace("searchForm.html"); 
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

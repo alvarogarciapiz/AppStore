@@ -19,6 +19,23 @@
     font-size: 15px;
 }
 
+.textoVerde{
+    color: rgb(20, 133, 29);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    margin-left: 20px;
+}
+
+.textoRojo{
+    color: rgb(203, 52, 52);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    margin-left: 20px;
+}
+
+
 .textoGrisInfo{
     color: #b4b4b4;
     text-decoration: none;

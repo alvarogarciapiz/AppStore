@@ -8,6 +8,17 @@
     <meta name="description" content="Práctica final para la asignatura de desarrollo web I" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta name="author" content="Álvaro García Pizarro" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <style>
+        .textoVerde {
+            color: rgb(20, 133, 29);
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            margin-left: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -28,7 +39,7 @@
 
     <aside>
         <div class="buscador">
-            <input class="buscadorInput" type="text" placeholder="Buscar">
+            <input class="buscadorInput" id="buscadorInput" type="text" placeholder="Buscar">
         </div>
 
         <div class="enlacesAside">
@@ -61,15 +72,18 @@
     <section class="purchase">
         <p class="textoGrisTitulo">Completa los datos de pago</p>
         <div class="espacioCampos">
-            <p class="textoGrisInfo">Complete sus datos personales y de su tarjeta para poder completar el pago</p><br>
-            <input placeholder="Nombre" class="input"><br>
-            <input placeholder="Apellidos" class="input"><br>
-            <input placeholder="Número de tarjeta" class="input" type="number"><br>
+            <p class="textoGrisInfo">Complete sus datos personales y de su tarjeta para poder completar el pago</p>
+            <p><span class="textoRojo" id="help" style="margin-left: 0px;"></span></p>
+            <input placeholder="Nombre" id="nombre" class="input"><span class="textoRojo" id="nombre_help"></span><br>
+            <input placeholder="Apellidos" id="apellidos" class="input"><span class="textoRojo"
+                id="apellidos_help"></span><br>
+            <input placeholder="Número de tarjeta" id="numTarjeta" class="input" type="number"><span class="textoRojo"
+                id="numTarjeta_help"></span><br>
             <input placeholder="Fecha de caducidad" class="input" type="date"><br>
-            <input placeholder="CVV" class="input" type="number">
+            <input placeholder="CVV" id="cvv" class="input" type="number"><span class="textoRojo" id="cvv_help"></span>
         </div>
         <div class="espacioPago">
-            <button class="botonPagar"><a class="textoBlanco">Pagar</a></button>
+            <button class="botonPagar" id="pagar"><a class="textoBlanco">Pagar</a></button>
         </div>
     </section>
 
@@ -99,6 +113,77 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        $(document).ready(function () {
+            var error = false;
+            //Validación de los campos
+
+            $('#pagar').click(function () {
+
+                //Validación del Nombre
+                if ($('#nombre').val() == "") {
+                    $('#nombre_help').html('Introduzca su nombre');
+                    error = true;
+                }
+                if ($('#nombre').val().length > 20) {
+                    $('#nombre_help').html('Introduce un nombre válido');
+                    error = true;
+                }
+
+                //Validación de los apellidos
+                if ($('#apellidos').val() == "") {
+                    $('#apellidos_help').html('Introduzca sus apellidos');
+                    error = true;
+                }
+                if ($('#apellidos').val().length >= 40) {
+                    $('#apellidos_help').html('Introduzca unos apellidos válidos');
+                    error = true;
+                }
+
+                //Validación número de tarjeta
+                var numTarjeta = $('#numTarjeta').val();
+                if (!$.isNumeric(numTarjeta)) {
+                    error = true;
+                    $('#numTarjeta_help').html('Introduzca un número de tarjeta válido');
+                }
+                if (numTarjeta.length > 16) {
+                    $('#numTarjeta_help').html('Introduzca un número de tarjeta válido');
+                    error = true;
+                }
+                if (numTarjeta.length < 16) {
+                    $('#numTarjeta_help').html('Introduzca un número de tarjeta válido');
+                    error = true;
+                }
+
+                //Validación CVV
+                var cvv = $('#cvv').val();
+                if (!$.isNumeric(cvv)) {
+                    error = true;
+                    $('#cvv_help').html('Introduzca un CVV válido');
+                }
+                if (cvv.length > 3) {
+                    $('#cvv_help').html('Introduzca un CVV válido');
+                    error = true;
+                }
+
+                //Comprobación de ERROR
+                if (error == true) {
+                    $('#help').html('Corrija los errores');
+                } else {
+                    $('#help').addClass('textoVerde');
+                    $('#help').html('Datos procesados con éxito');
+                    //Envío de los datos
+                }
+            });
+
+            $('#buscadorInput').keypress(function (e) {
+                if (e.which == 13) {//Enter key pressed
+                    window.location.replace("searchForm.html"); 
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
